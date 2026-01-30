@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="A0ZT2ch8klk-NAOm4rZP">
+    <mxGraphModel dx="1234" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-22" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Device Offline" vertex="1">
+          <mxGeometry height="54" width="162" x="45" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-23" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Messages arrive&#xa;telemetry.device-123" vertex="1">
+          <mxGeometry height="78" width="213" x="20" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-24" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Durable Queue&#xa;Persisted to disk&#xa;Mirrored if HA" vertex="1">
+          <mxGeometry height="102" width="177" x="38" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-25" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="TTL? Dead Letter?" vertex="1">
+          <mxGeometry height="54" width="188" x="32" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-26" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Device reconnects&#xa;mTLS auth" vertex="1">
+          <mxGeometry height="78" width="191" x="31" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-27" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Consume &amp; ack" vertex="1">
+          <mxGeometry height="54" width="169" x="42" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-28" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Messages delivered&#xa;in order" vertex="1">
+          <mxGeometry height="78" width="197" x="28" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-29" edge="1" parent="1" source="Qi9ClV_48KJQ9XcH0DLp-22" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qi9ClV_48KJQ9XcH0DLp-23" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-30" edge="1" parent="1" source="Qi9ClV_48KJQ9XcH0DLp-23" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qi9ClV_48KJQ9XcH0DLp-24" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-31" edge="1" parent="1" source="Qi9ClV_48KJQ9XcH0DLp-24" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qi9ClV_48KJQ9XcH0DLp-25" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-32" edge="1" parent="1" source="Qi9ClV_48KJQ9XcH0DLp-25" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qi9ClV_48KJQ9XcH0DLp-26" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-33" edge="1" parent="1" source="Qi9ClV_48KJQ9XcH0DLp-26" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qi9ClV_48KJQ9XcH0DLp-27" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-34" edge="1" parent="1" source="Qi9ClV_48KJQ9XcH0DLp-27" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qi9ClV_48KJQ9XcH0DLp-28" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
