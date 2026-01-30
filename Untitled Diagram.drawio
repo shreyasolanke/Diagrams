@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="q7yxQqqswOiyRQ2R3aeQ">
+    <mxGraphModel dx="1234" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="IoT Device" vertex="1">
+          <mxGeometry height="1029" width="150" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="RabbitMQ (AMQPS)" vertex="1">
+          <mxGeometry height="1029" width="164" x="372" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Device Mgmt Service" vertex="1">
+          <mxGeometry height="1029" width="174" x="728" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Certificate Authority" vertex="1">
+          <mxGeometry height="1029" width="166" x="952" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="User/Revocation DB" vertex="1">
+          <mxGeometry height="1029" width="164" x="1168" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-6" parent="1" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;height=20;width=30;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="alt" vertex="1">
+          <mxGeometry height="387" width="1177" x="84" y="471" as="geometry" />
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-7" parent="_RMrGwC-IIuzBxoWBHu0-6" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" value="[User exists]" vertex="1">
+          <mxGeometry height="20" width="1147" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-8" parent="_RMrGwC-IIuzBxoWBHu0-6" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" value="[New device]" vertex="1">
+          <mxGeometry height="4" width="1177" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-9" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-1" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-4" value="1. Request Client Cert (CSR)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="574" y="172" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-10" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-4" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-1" value="2. Issue client_certificate.pem + key">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="577" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-11" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-1" style="curved=1;endArrow=block;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-1" value="3. Store cert/key securely">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="146" y="268" />
+              <mxPoint x="146" y="298" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-12" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-1" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-2" value="4. TLS Handshake&#xa;- Present client cert&#xa;- RabbitMQ verifies vs CA bundle">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="384" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-13" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-2" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-5" value="5. Extract CN=&quot;device-123&quot;&#xa;Lookup user in internal DB">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="861" y="451" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-14" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-2" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-1" value="6. Auth Success">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="286" y="544" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-15" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-2" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-3" value="7. HTTP/Webhook: New device cert auth&#xa;CN=device-123">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="643" y="656" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-16" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-3" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-5" value="8. Validate device&#xa;Create RabbitMQ user &quot;device-123&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1041" y="723" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-17" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-3" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-2" value="9. rabbitmqctl add_user device-123&#xa;set_permissions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="646" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-18" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-2" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-1" value="10. Auth Success (now)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="286" y="838" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-19" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-1" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-2" value="11. Declare queue: telemetry.device-123">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="896" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-20" edge="1" parent="1" source="_RMrGwC-IIuzBxoWBHu0-2" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_RMrGwC-IIuzBxoWBHu0-1" value="12. Queue OK">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="286" y="944" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RMrGwC-IIuzBxoWBHu0-21" parent="1" style="fillColor=#fff2cc;strokeColor=#d6b656;" value="mTLS Device Registration Flow" vertex="1">
+          <mxGeometry height="49" width="1205" x="70" y="95" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
