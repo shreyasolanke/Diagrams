@@ -13,7 +13,7 @@
         <mxCell id="Qi9ClV_48KJQ9XcH0DLp-24" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Durable Queue&#xa;Persisted to disk&#xa;Mirrored if HA" vertex="1">
           <mxGeometry height="102" width="177" x="38" y="252" as="geometry" />
         </mxCell>
-        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-25" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="TTL? Dead Letter?" vertex="1">
+        <mxCell id="Qi9ClV_48KJQ9XcH0DLp-25" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Configs:  TTL&#xa; Dead Letter" vertex="1">
           <mxGeometry height="54" width="188" x="32" y="404" as="geometry" />
         </mxCell>
         <mxCell id="Qi9ClV_48KJQ9XcH0DLp-26" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Device reconnects&#xa;mTLS auth" vertex="1">
@@ -55,6 +55,11 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <UserObject label="# Device-specific durable queues&#xa;queues:&#xa;  &lt;d2c&gt;&#xa;  &lt;c2d&gt;&#xa;    durable: true&#xa;    arguments:&#xa;      x-queue-type: quorum  # or classic&#xa;      x-message-ttl: 86400000  # 24h for offline devices&#xa;      x-dead-letter-exchange: dlx.telemetry  # if TTL expires&#xa;      x-max-length: 100000  # prevent unbounded growth" link="# Device-specific durable queues&#xa;queues:&#xa;  telemetry.device-{device_id}:&#xa;    durable: true&#xa;    arguments:&#xa;      x-queue-type: quorum  # or classic&#xa;      x-message-ttl: 86400000  # 24h for offline devices&#xa;      x-dead-letter-exchange: dlx.telemetry  # if TTL expires&#xa;      x-max-length: 100000  # prevent unbounded growth" id="_o1E0jm3iRLyxudgbnAG-1">
+          <mxCell parent="1" style="text;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="200" width="340" x="330" y="510" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
