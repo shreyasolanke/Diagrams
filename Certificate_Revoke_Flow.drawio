@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="xatnQekcElo5k0ynhlvI">
+    <mxGraphModel dx="1234" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" value="Device Mgmt Service" vertex="1">
+          <mxGeometry height="969" width="174" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" value="RabbitMQ (AMQPS)" vertex="1">
+          <mxGeometry height="969" width="164" x="369" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" value="CRL/OCSP Responder" vertex="1">
+          <mxGeometry height="969" width="180" x="595" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" value="Revocation DB" vertex="1">
+          <mxGeometry height="969" width="150" x="825" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" value="Device" vertex="1">
+          <mxGeometry height="969" width="150" x="1025" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-6" parent="1" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" value="alt" vertex="1">
+          <mxGeometry height="264" width="675" x="96" y="211" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-7" parent="7KGd5ygxSS4JxjBESgdO-6" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" value="[CRL-based revocation]" vertex="1">
+          <mxGeometry height="20" width="645" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-8" parent="7KGd5ygxSS4JxjBESgdO-6" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" value="[OCSP (real-time)]" vertex="1">
+          <mxGeometry height="4" width="675" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-9" parent="1" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" value="alt" vertex="1">
+          <mxGeometry height="160" width="1015" x="96" y="734" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-10" parent="7KGd5ygxSS4JxjBESgdO-9" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" value="[User-level revocation (faster)]" vertex="1">
+          <mxGeometry height="20" width="985" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-11" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-1" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="7KGd5ygxSS4JxjBESgdO-4" value="1. Mark device-123 as revoked&#xa;(compromised, decommissioned)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="512" y="191" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-12" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-1" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="7KGd5ygxSS4JxjBESgdO-3" value="2. Update CRL with device-123 serial">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="284" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-13" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-3" style="curved=1;endArrow=block;rounded=0;" target="7KGd5ygxSS4JxjBESgdO-3" value="3. Publish new CRL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="736" y="332" />
+              <mxPoint x="736" y="362" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-14" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-1" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="7KGd5ygxSS4JxjBESgdO-3" value="2. Add device-123 to OCSP revocation list">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-15" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-5" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="7KGd5ygxSS4JxjBESgdO-2" value="4. TLS Handshake (present revoked cert)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="787" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-16" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-2" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="7KGd5ygxSS4JxjBESgdO-3" value="5. Check OCSP or CRL&#xa;Status=REVOKED">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="577" y="647" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-17" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-2" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="7KGd5ygxSS4JxjBESgdO-5" value="6. TLS Alert: Certificate Revoked&#xa;Connection REFUSED">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="784" y="714" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-18" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-1" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="7KGd5ygxSS4JxjBESgdO-2" value="7. rabbitmqctl delete_user device-123&#xa;OR clear_permissions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="288" y="826" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-19" edge="1" parent="1" source="7KGd5ygxSS4JxjBESgdO-2" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="7KGd5ygxSS4JxjBESgdO-5" value="8. Auth fails: User not found">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="784" y="874" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-20" parent="1" style="fillColor=#ffff88;strokeColor=#9E916F;" value="Certificate/Device Revocation Flow" vertex="1">
+          <mxGeometry height="49" width="628" x="82" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="7KGd5ygxSS4JxjBESgdO-21" parent="1" style="fillColor=#ffff88;strokeColor=#9E916F;" value="RabbitMQ reloads CA/CRL bundle&#xa;(restart or SIGHUP)" vertex="1">
+          <mxGeometry height="67" width="264" x="319" y="485" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
